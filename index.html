@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./src/less/style.less" />
+    <script src="javascript/validador.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <div class="hamburguer-buttons">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <h1>Mi Portafolio</h1>
+        </div>
+        <nav class="hidden">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mi</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="hero">
+            <div>
+                <picture>
+                    <source srcset="https://picsum.photos/id/0/1300/480" media="(min-width:1025px)" />
+                    <source srcset="https://picsum.photos/id/0/1024/480" media="(min-width:720px)" />
+                    <img src="https://picsum.photos/id/0/480/480" alt="Imagen de fondo" />
+                </picture>
+            </div>
+            <div class="action-panel">
+                <h2>Buenas Tardes, Soy Alan Carranza</h2>
+                <p>Actualmente estoy en busca de un trabajo que pueda complacer todas mis habilidades de programacion, durante este apartado del portafalio se podran ver algunas cosas sobre mi, tanto mi informacion y algunos proyectos en los que he trabajado con mi equipo, etc.</p>
+                <p>Estudiante de ICC - UNICAH</p>
+                <a href="#sobre-mi">Ver mas sobre mi</a>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="seccion">
+            <h2>Sobre Mi</h2>
+            <div class="grid container">
+                <div class="row">
+                    <div class="col-12 col-m-6">
+                        <img
+                            src="imgs/perfil.jpg"
+                            alt="Foto de perfil de Juan Perez"
+                            class="foto-perfil"
+                        />
+                    </div>
+                    <div class="col-12 col-m-6">
+                        <h3>Biografia</h3>
+                        <p>
+                            Me llamo Alan Geovany Carranza Stevenson. Soy estudiante 
+                            de tercer año de Ingenieria en Ciencias de la Computacion 
+                            en la Universidad Catolica de Honduras (UNICAH),
+                            campus San Pedro Sula.
+                        </p>
+                        <p>
+                            Me gusta el desarrollo web y aprender nuevas tecnologias.
+                        </p>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>Campo</th>
+                                    <th>Informacion</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Alan Geovany Carranza Stevenson</td>
+                                </tr>
+                                <tr>
+                                    <td>Ciudad</td>
+                                    <td>San Pedro Sula, Honduras</td>
+                                </tr>
+                                <tr>
+                                    <td>Universidad</td>
+                                    <td>UNICAH</td>
+                                </tr>
+                                <tr>
+                                    <td>Carrera</td>
+                                    <td>Ingenieria en Ciencias de la Computacion</td>
+                                </tr>
+                                <tr>
+                                    <td>Correo</td>
+                                    <td>alanstevenson2005@gmail.com</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">Datos sobre mi</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="seccion seccion-gris">
+            <h2>Mis Proyectos</h2>
+            <div class="grid container">
+                <div class="row">
+                    <div class="col-12 col-m-6">
+                        <div class="tarjeta-proyecto">
+                            <picture>
+                                <source srcset="imgs/Logo_SnacksYummies.jpg" media="(min-width:720px)" />
+                                <img src="imgs/Logo_SnacksYummies.jpg" alt="Proyecto Yummies" />
+                            </picture>
+                            <h3>Sitio Web para Yummies</h3>
+                            <p>Pagina web para la empresa de chucherias Yummies, que es una pagina web que se encarga de pedir pedidos, almacenar inventario, etc. Hecha con HTML, javascript y CSS.</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>javascript</li>
+                            </ul>
+                            <a href="#">Ver proyecto</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-m-6">
+                        <div class="tarjeta-proyecto">
+                            <picture>
+                                <source srcset="imgs/acolitos.jpg" media="(min-width:720px)" />
+                                <img src="imgs/acolitos.jpg" alt="Proyecto Acolitos" />
+                            </picture>
+                            <h3>Sitio Web para comunidad acolita</h3>
+                            <p>Sitio web que se encarga de ser lo realmente llamativo visualmente para que los niños leyeran y aprendieran sobre la comunidad acolita.</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <a href="#">Ver proyecto</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-m-6">
+                        <div class="tarjeta-proyecto">
+                            <picture>
+                                <source srcset="" media="(min-width:720px)" />
+                                <img src="https://picsum.photos/id/180/480/240" alt="Proyecto 1" />
+                            </picture>
+                            <h3>Formulario con Validacion</h3>
+                            <p>Formulario de registro con validacion usando JavaScript y expresiones regulares.</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript y Regex</li>
+                            </ul>
+                            <a href="#">Ver proyecto</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-m-6">
+                        <div class="tarjeta-proyecto">
+                            <picture>
+                                <source srcset="https://picsum.photos/id/119/640/320" media="(min-width:720px)" />
+                                <img src="https://picsum.photos/id/119/480/240" alt="Proyecto 4" />
+                            </picture>
+                            <h3>Este Portafolio</h3>
+                            <p>Mi portafolio personal hecho para que otras empresas puedan saber sobre mis habilidades y de las cosas que se aprenden durante el tiempo.</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <a href="#">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="seccion">
+            <h2>Habilidades</h2>
+            <div class="container">
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>LESS</li>
+                    <li>JavaScript</li>
+                    <li>Responsive Design</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion seccion-gris">
+            <h2>Contactame</h2>
+            <div class="container">
+                <p>Puedes contactarme por cualquiera de estos medios:</p>
+                <ul>
+                    <li>Correo: <a href="mailto:alanstevenson2005@gmail.com">alanstevenson2005@gmail.com</a></li>
+                    <li>Telefono: <a href="tel:+50432644883">+504 3264-4883</a></li>
+                    <li>GitHub: <a href="https://github.com/AlanStevenson17" target="_blank">github.com/AlanStevenson17</a></li>
+                </ul>
+
+                <form action="index.html" method="GET" id="contactForm" class="form">
+                    <h3>Enviarme un mensaje</h3>
+                    <fieldset>
+                        <div id="divNombre">
+                            <label for="txtNombre">Nombre Completo</label>
+                            <input type="text" name="txtNombre" id="txtNombre" placeholder="Escribe tu nombre" />
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div id="divCorreo">
+                            <label for="txtCorreo">Correo Electronico</label>
+                            <input type="email" name="txtCorreo" id="txtCorreo" placeholder="tucorreo@ejemplo.com" />
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div id="divMensaje">
+                            <label for="txtMensaje">Mensaje</label>
+                            <textarea name="txtMensaje" id="txtMensaje" placeholder="Escribe tu mensaje aqui..." rows="4"></textarea>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <button type="submit" name="btnEnviar" id="btnEnviar">Enviar -></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        Todos los derechos 2026 ICC UNICAH
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+@import "variables.less";
+@import "mixins.less";
+@import "hero.less";
+@import "section.less";
+@import "cards.less";
+@import "habilidades.less";
+@import "form.less";
+@import "responsive.less";
+
+@color-principal: #6c3cf0;
+@color-secundario: #ffffff;
+@color-fondo: #f5f6fa;
+@texto: #555;
+@titulo: #1f2937;
+@sombra: 0 8px 20px rgba(0,0,0,.12);
+@radio: 12px;
+
+body{
+    margin:0;
+    font-family:system-ui, sans-serif;
+    background:@color-fondo;
+    color:@texto;
+    line-height:1.6;
+}
+
+header{
+    position:sticky;
+    top:0;
+    background:linear-gradient(90deg,#6c3cf0,#9b59ff);
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 50px;
+    box-shadow:@sombra;
+    z-index:100;
+
+    h1{
+        margin:0;
+    }
+
+    nav{
+
+        ul{
+            display:flex;
+            list-style:none;
+            gap:25px;
+            margin:0;
+            padding:0;
+
+            a{
+                color:white;
+                text-decoration:none;
+                font-weight:bold;
+
+                &:hover{
+                    color:#ffe082;
+                }
+            }
+        }
+    }
+}
+
+.foto-perfil{
+    width:280px;
+    border-radius:50%;
+    display:block;
+    margin:auto;
+    box-shadow:@sombra;
+}
+
+
+.card {
+    background: @blanco;
+    padding: 20px;
+    border-radius: 10px;
+    .sombra();
+}
+
+button {
+    background: @color-principal;
+    color: @blanco;
+    border: none;
+    .boton();
+
+    &:hover {
+        background: darken(@color-principal, 10%);
+    }
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:25px;
+}

@@ -1,0 +1,38 @@
+.hero{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:50px;
+    padding:70px;
+
+    img{
+        width:100%;
+        border-radius:@radio;
+        box-shadow:@sombra;
+    }
+
+    .action-panel{
+
+        h2{
+            font-size:40px;
+            color:@titulo;
+        }
+
+        p{
+            margin:20px 0;
+        }
+
+        a{
+            display:inline-block;
+            background:@color-principal;
+            color:white;
+            padding:14px 28px;
+            border-radius:8px;
+            text-decoration:none;
+
+            &:hover{
+                background:darken(@color-principal,10%);
+            }
+        }
+    }
+}
